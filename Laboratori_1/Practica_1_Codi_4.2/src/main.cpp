@@ -5,6 +5,6 @@ void setup() {
    Serial.begin(115200);
 }
 void loop() {
-   GPIO.out_w1ts = (1 << LED_PIN);
-   GPIO.out_w1tc = (1 << LED_PIN);
+   digitalWrite(LED_PIN, HIGH);
+   digitalWrite(LED_PIN, LOW);
 }

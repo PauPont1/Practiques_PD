@@ -32,5 +32,3 @@ void loop() {
     Serial.println("NeoPixel APAGAT!");
     delay(DELAY_TIME);
 }
-
-

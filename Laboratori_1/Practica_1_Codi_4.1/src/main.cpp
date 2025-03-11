@@ -4,12 +4,9 @@ void setup() {
    pinMode(LED_PIN, OUTPUT);
    Serial.begin(115200);
 }
-// 1. Con Serial y usando funciones de Arduino
 void loop() {
    Serial.println("ON");
-   digitalWrite(LED_PIN, HIGH);
+   GPIO.out_w1ts = (1 << LED_PIN);  // Encender LED (Set bit)
    Serial.println("OFF");
-   digitalWrite(LED_PIN, LOW);
+   GPIO.out_w1tc = (1 << LED_PIN);  // Apagar LED (Clear bit)
 }
-
-

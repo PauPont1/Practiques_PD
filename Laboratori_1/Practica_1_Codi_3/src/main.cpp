@@ -31,5 +31,3 @@ void loop() {
     Serial.println("OFF");
     delay(DELAY_TIME);
 }
-
-
