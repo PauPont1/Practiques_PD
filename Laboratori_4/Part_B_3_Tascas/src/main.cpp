@@ -75,5 +75,3 @@ void setup() {
 void loop() {
   // No se necesita código en el loop principal
 }
-
-
